@@ -1,16 +1,14 @@
 #include <fstream>
-
-
-
+#include <iostream>
 
 namespace ariel {
     class NumberWithUnits{
         private:
 
         public:
-        NumberWithUnits(double number, string unit){
+        NumberWithUnits(double number, std::string unit){
         }
-        static void read_units(ifstream &file_name);
+        static void read_units(std::ifstream &file_name);
         //overloading operators
         friend NumberWithUnits operator+ (const NumberWithUnits& a ,const NumberWithUnits& b);
         NumberWithUnits& operator+= (const NumberWithUnits a);
@@ -22,7 +20,7 @@ namespace ariel {
         NumberWithUnits& operator-= (const NumberWithUnits a);
         NumberWithUnits& operator- ();
         NumberWithUnits& operator--();//prefix
-        const NumberWithUnits operator--(int);//postfix
+        const NumberWithUnits operator--(int a);//postfix
 
         friend bool operator== (const NumberWithUnits& a, const NumberWithUnits& b);
         friend bool operator!= (const NumberWithUnits& a, const NumberWithUnits& b);
