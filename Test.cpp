@@ -33,4 +33,3 @@ TEST_CASE("checks basic arithmetic operators on distance elements")
     CHECK(b -= NumberWithUnits{300, "m"} == NumberWithUnits(100, "m"));
     CHECK(c -= NumberWithUnits{50, "cm"} == NumberWithUnits(20, "cm"));
 }
-
