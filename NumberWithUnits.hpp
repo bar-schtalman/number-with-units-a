@@ -8,7 +8,7 @@ namespace ariel {
         private:
        
         public:
-         double val;
+        double val;
         std::string type;
         NumberWithUnits(double val, std::string type){};
         static void read_units(std::ifstream &file_name);
@@ -37,4 +37,6 @@ namespace ariel {
         friend std::istream& operator>> (std::istream& is, NumberWithUnits& a);
     };
 }
+
+
  
