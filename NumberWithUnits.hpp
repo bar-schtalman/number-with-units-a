@@ -16,6 +16,7 @@ namespace ariel {
         friend NumberWithUnits operator+ (const NumberWithUnits& a ,const NumberWithUnits& b);
         friend NumberWithUnits operator+ (const NumberWithUnits& a);
         NumberWithUnits& operator++();
+        NumberWithUnits& operator++(int n);
         friend NumberWithUnits operator-(const NumberWithUnits& a, const NumberWithUnits& b);
 
         friend NumberWithUnits operator- (const NumberWithUnits& a);

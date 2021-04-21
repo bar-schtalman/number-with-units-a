@@ -12,6 +12,9 @@ namespace ariel{
     NumberWithUnits& NumberWithUnits::operator++(){
         return *this;
     }
+        NumberWithUnits& NumberWithUnits::operator++(int n){
+        return *this;
+    }
     NumberWithUnits operator- (const NumberWithUnits& a ,const NumberWithUnits& b){
         return a;
     }
